@@ -27,3 +27,4 @@ do
     mysqlsh myadmin@localhost:33${i}0 --sql -e "CHANGE MASTER TO MASTER_HOST='localhost', MASTER_PORT=3310, MASTER_USER='repl', MASTER_PASSWORD='password', MASTER_AUTO_POSITION=1, get_master_public_key=1; START SLAVE;"
 done
 
+exit 0

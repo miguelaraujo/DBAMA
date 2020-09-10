@@ -43,7 +43,7 @@ Or alternatively, specify the download. For example:
 
 ### Destroy enviroment
 
-`dbdeployer delete msb1 && dbdeployer delete msb2 && dbdeployer delete msb3 && dbdeployer delete msb4 && dbdeployer delete msb5 && dbdeployer delete msb6`
+`for i in {1..6}; do dbdeployer delete msb${i} &&; done`
 
 ## MySQL AdminAPI documentation/userguide
 
